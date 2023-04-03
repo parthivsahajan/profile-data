@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Serif+Pro&display=swap');
+.title{
+    font-family: 'Source Serif Pro', serif;
+}
+
+.profile_image{
+    width: 180px;
+    height: 120px;
+}

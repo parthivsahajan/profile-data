@@ -1,0 +1,45 @@
+<div class="container title mt-3">
+    <div class="row">
+        <div class="col">
+            <h1>Profile
+                
+                    <a routerLink="/profile/view" class="btn btn-success">
+                        <i class="fa fa-eye" aria-hidden="true"></i>&nbsp;
+                       view
+                    </a>
+            
+            </h1>
+        </div>
+    </div>
+
+    <!-----<pre>
+        {{allData | json}}
+    </pre> --->
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mt-3" *ngFor="let data of allData">
+                <div class="card list-group-item-secondary">
+                    <div class="row">
+                        <div class="card-body ">
+                       <div class="row">
+                        <div class="col-md-4">
+                            <img [src]="data.image" alt="no image"  class="profile_image">
+                        </div>
+
+                        <div class="col-md-7">
+                            <ul class="list-group">
+                                <li class="list-group-item">Name : <span><b>{{data.firstName }}</b></span></li>
+                                <li class="list-group-item">Email: <span><b>{{data.email }}</b></span></li>
+                                <li class="list-group-item">Address: <span><b>{{data.address.address}}</b></span></li>
+                                
+                              </ul>
+                            </div>
+                       </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

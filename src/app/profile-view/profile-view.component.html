@@ -1,0 +1,37 @@
+<div class="container title mt-3">
+    <div class="row">
+        <div class="col">
+            <h1>Details
+            <a routerLink="/" class="btn btn-success">
+                <i class="fa-sharp fa-solid fa-house"></i>&nbsp;
+                Back
+            </a>
+            </h1>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row border p-5">
+            <div class="col-md-3">
+                <img [src]="user.image" alt="no image" width="200px"  height="200px">
+            </div>
+            
+             <div class="col-md-9">
+                <button (click)="refresh()" class="btn btn-success" type="button">
+                    Refresh
+                </button>
+                <ul class="list-group mt-3">
+                    <li class="list-group-item">NAME : <span><b>{{user.firstName}}</b></span></li>
+                    <li class="list-group-item">ADDRESS: <span><b>{{user.address.address}}</b></span></li>
+                    <li class="list-group-item">MOBILE: <span><b>{{user.phone }}</b></span></li>
+                    <li class="list-group-item">TITLE: <span><b>{{user.firstName }}</b></span></li>
+                    <li class="list-group-item">NAME : <span><b>{{user.firstName}}</b></span></li>
+                    <li class="list-group-item">ADDRESS: <span><b>{{user.address.address}}</b></span></li>
+                    <li class="list-group-item">MOBILE: <span><b>{{user.phone }}</b></span></li>
+                    <li class="list-group-item">Department: <span><b>{{user.company.department }}</b></span></li>
+                    <li class="list-group-item">TITLE: <span><b>{{user.firstName }}</b></span></li>
+                    
+                  </ul>
+             </div>
+        </div>
+    </div>
